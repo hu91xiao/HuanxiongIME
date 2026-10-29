@@ -1,0 +1,22 @@
+# ---------------------------------------------------------------- 构建产物
+build/
+dist/
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+# ---------------------------------------------------------------- 素材（由上游提供，不进版本库）
+# 小狼毫运行时（含品牌化改造过的 weasel*.dll / *.exe / .ime）
+#   GPLv3，请从上游 0.17.4 安装包安装后再跑 python build.py payload
+payload/program/
+# Noto Sans SC 可变字体（SIL OFL 1.1），单独下载放这里
+payload/fonts/
+# PyInstaller 打包出来的设置面板（build.py settings 生成）
+payload/settings/
+
+# ---------------------------------------------------------------- 本机私有数据
+backup/
+.venv/
+*.bak
+*.bak_*

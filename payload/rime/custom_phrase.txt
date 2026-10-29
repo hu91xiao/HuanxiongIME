@@ -1,0 +1,44 @@
+# Rime table
+#@/db_name	custom_phrase
+#@/db_type	tabledb
+#@/rime_version	1.0
+Unreal Engine 5	ue5	100
+Blueprint	bp	100
+Blueprints	bps	50
+Material	mt	80
+Materials	mts	50
+Niagara	ncl	80
+Chaos	cos	80
+MetaHuman	mh	80
+Widget	wg	80
+Widgets	wgs	50
+Actor	ac	80
+Component	cmp	80
+Lumen	lmn	60
+Nanite	nnt	60
+C++	cpp	100
+Level	lv	60
+Shader	sdr	60
+Texture	tex	60
+Animation	anim	60
+Physics	phy	50
+GameMode	gm	50
+收到	shoudao	50
+谢谢	xiexie	100
+辛苦了	xinkule	100
+好的	haode	100
+没问题	meiwenti	100
+稍等	shaodeng	100
+明白了	mingbaile	100
+我的电脑	wodediannao	50
+(￣▽￣)	hehe	50
+(｡･ω･｡)	ai	50
+ヽ(○^㉨^)ﾉ	ku	50
+(✿◡‿◡)	hua	50
+(╯・_・)╯︵┻━┻	fan	50
+(●'◡'●)	xiao	50
+🎮	youxi	50
+💡	idea	50
+🔥	huo	50
+⚡	shandian	50
+😀	xiaolian	50

@@ -1,0 +1,988 @@
+[
+ {
+  "hive": "HKLM",
+  "path": "SOFTWARE\\Classes\\CLSID\\{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}",
+  "tree": {
+   "values": {
+    "": [
+     1,
+     "Weasel"
+    ]
+   },
+   "keys": {
+    "InprocServer32": {
+     "values": {
+      "": [
+       1,
+       "C:\\Windows\\system32\\weasel.dll"
+      ],
+      "ThreadingModel": [
+       1,
+       "Apartment"
+      ]
+     },
+     "keys": {}
+    }
+   }
+  }
+ },
+ {
+  "hive": "HKLM",
+  "path": "SOFTWARE\\Microsoft\\CTF\\TIP\\{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}",
+  "tree": {
+   "values": {},
+   "keys": {
+    "Category": {
+     "values": {},
+     "keys": {
+      "Category": {
+       "values": {},
+       "keys": {
+        "{046B8C80-1647-40F7-9B21-B93B81AABC1B}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{13A016DF-560B-46CD-947A-4C3AF1E0E35D}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{24AF3031-852D-40A2-BC09-8992898CE722}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{25504FB4-7BAB-4BC1-9C69-CF81890F0EF5}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{34745C63-B2F0-4784-8B67-5E12C8701A31}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{364215D9-75BC-11D7-A6EF-00065B84435C}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{364215DA-75BC-11D7-A6EF-00065B84435C}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{49D2F9CE-1F5E-11D7-A6D3-00065B84435C}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{49D2F9CF-1F5E-11D7-A6D3-00065B84435C}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{534C48C1-0607-4098-A521-4FC899C73E90}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{565FB8D8-6BD4-4CA1-B223-0F2CCB8F4F96}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{7C6A82AE-B0D7-4F14-A745-14F28B009D61}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{85F9794B-4D19-40D8-8864-4E747371A66D}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{9B7BE3A9-E8AB-4D47-A8FE-254FA423436D}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{B95F181B-EA4C-4AF1-8056-7C321ABBB091}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{CCF05DD7-4A87-11D7-A6E2-00065B84435C}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        }
+       }
+      },
+      "Item": {
+       "values": {},
+       "keys": {
+        "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+         "values": {},
+         "keys": {
+          "{046B8C80-1647-40F7-9B21-B93B81AABC1B}": {
+           "values": {},
+           "keys": {}
+          },
+          "{13A016DF-560B-46CD-947A-4C3AF1E0E35D}": {
+           "values": {},
+           "keys": {}
+          },
+          "{24AF3031-852D-40A2-BC09-8992898CE722}": {
+           "values": {},
+           "keys": {}
+          },
+          "{25504FB4-7BAB-4BC1-9C69-CF81890F0EF5}": {
+           "values": {},
+           "keys": {}
+          },
+          "{34745C63-B2F0-4784-8B67-5E12C8701A31}": {
+           "values": {},
+           "keys": {}
+          },
+          "{364215D9-75BC-11D7-A6EF-00065B84435C}": {
+           "values": {},
+           "keys": {}
+          },
+          "{364215DA-75BC-11D7-A6EF-00065B84435C}": {
+           "values": {},
+           "keys": {}
+          },
+          "{49D2F9CE-1F5E-11D7-A6D3-00065B84435C}": {
+           "values": {},
+           "keys": {}
+          },
+          "{49D2F9CF-1F5E-11D7-A6D3-00065B84435C}": {
+           "values": {},
+           "keys": {}
+          },
+          "{534C48C1-0607-4098-A521-4FC899C73E90}": {
+           "values": {},
+           "keys": {}
+          },
+          "{565FB8D8-6BD4-4CA1-B223-0F2CCB8F4F96}": {
+           "values": {},
+           "keys": {}
+          },
+          "{7C6A82AE-B0D7-4F14-A745-14F28B009D61}": {
+           "values": {},
+           "keys": {}
+          },
+          "{85F9794B-4D19-40D8-8864-4E747371A66D}": {
+           "values": {},
+           "keys": {}
+          },
+          "{9B7BE3A9-E8AB-4D47-A8FE-254FA423436D}": {
+           "values": {},
+           "keys": {}
+          },
+          "{B95F181B-EA4C-4AF1-8056-7C321ABBB091}": {
+           "values": {},
+           "keys": {}
+          },
+          "{CCF05DD7-4A87-11D7-A6E2-00065B84435C}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    "LanguageProfile": {
+     "values": {},
+     "keys": {
+      "0x00000404": {
+       "values": {},
+       "keys": {
+        "{3D02CAB6-2B8E-4781-BA20-1C9267529467}": {
+         "values": {
+          "Description": [
+           1,
+           "幻熊输入法"
+          ],
+          "IconFile": [
+           1,
+           "C:\\Windows\\system32\\weasel.dll"
+          ],
+          "IconIndex": [
+           4,
+           0
+          ],
+          "Enable": [
+           4,
+           0
+          ],
+          "HiddenInSettingUI": [
+           4,
+           0
+          ],
+          "SubItemInSettingUI": [
+           4,
+           0
+          ]
+         },
+         "keys": {}
+        }
+       }
+      },
+      "0x00000804": {
+       "values": {},
+       "keys": {
+        "{3D02CAB6-2B8E-4781-BA20-1C9267529467}": {
+         "values": {
+          "Description": [
+           1,
+           "幻熊输入法"
+          ],
+          "IconFile": [
+           1,
+           "C:\\Windows\\system32\\weasel.dll"
+          ],
+          "IconIndex": [
+           4,
+           0
+          ],
+          "Enable": [
+           4,
+           1
+          ],
+          "HiddenInSettingUI": [
+           4,
+           0
+          ],
+          "SubItemInSettingUI": [
+           4,
+           0
+          ]
+         },
+         "keys": {}
+        }
+       }
+      },
+      "0x00000c04": {
+       "values": {},
+       "keys": {
+        "{3D02CAB6-2B8E-4781-BA20-1C9267529467}": {
+         "values": {
+          "Description": [
+           1,
+           "幻熊输入法"
+          ],
+          "IconFile": [
+           1,
+           "C:\\Windows\\system32\\weasel.dll"
+          ],
+          "IconIndex": [
+           4,
+           0
+          ],
+          "Enable": [
+           4,
+           0
+          ],
+          "HiddenInSettingUI": [
+           4,
+           0
+          ],
+          "SubItemInSettingUI": [
+           4,
+           0
+          ]
+         },
+         "keys": {}
+        }
+       }
+      },
+      "0x00001004": {
+       "values": {},
+       "keys": {
+        "{3D02CAB6-2B8E-4781-BA20-1C9267529467}": {
+         "values": {
+          "Description": [
+           1,
+           "幻熊输入法"
+          ],
+          "IconFile": [
+           1,
+           "C:\\Windows\\system32\\weasel.dll"
+          ],
+          "IconIndex": [
+           4,
+           0
+          ],
+          "Enable": [
+           4,
+           0
+          ],
+          "HiddenInSettingUI": [
+           4,
+           0
+          ],
+          "SubItemInSettingUI": [
+           4,
+           0
+          ]
+         },
+         "keys": {}
+        }
+       }
+      },
+      "0x00001404": {
+       "values": {},
+       "keys": {
+        "{3D02CAB6-2B8E-4781-BA20-1C9267529467}": {
+         "values": {
+          "Description": [
+           1,
+           "幻熊输入法"
+          ],
+          "IconFile": [
+           1,
+           "C:\\Windows\\system32\\weasel.dll"
+          ],
+          "IconIndex": [
+           4,
+           0
+          ],
+          "Enable": [
+           4,
+           0
+          ],
+          "HiddenInSettingUI": [
+           4,
+           0
+          ],
+          "SubItemInSettingUI": [
+           4,
+           0
+          ]
+         },
+         "keys": {}
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ {
+  "hive": "HKLM",
+  "path": "SOFTWARE\\WOW6432Node\\Classes\\CLSID\\{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}",
+  "tree": {
+   "values": {
+    "": [
+     1,
+     "Weasel"
+    ]
+   },
+   "keys": {
+    "InprocServer32": {
+     "values": {
+      "": [
+       1,
+       "C:\\Windows\\SysWow64\\weasel.dll"
+      ],
+      "ThreadingModel": [
+       1,
+       "Apartment"
+      ]
+     },
+     "keys": {}
+    }
+   }
+  }
+ },
+ {
+  "hive": "HKLM",
+  "path": "SOFTWARE\\WOW6432Node\\Microsoft\\CTF\\TIP\\{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}",
+  "tree": {
+   "values": {},
+   "keys": {
+    "Category": {
+     "values": {},
+     "keys": {
+      "Category": {
+       "values": {},
+       "keys": {
+        "{046B8C80-1647-40F7-9B21-B93B81AABC1B}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{13A016DF-560B-46CD-947A-4C3AF1E0E35D}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{24AF3031-852D-40A2-BC09-8992898CE722}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{25504FB4-7BAB-4BC1-9C69-CF81890F0EF5}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{34745C63-B2F0-4784-8B67-5E12C8701A31}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{364215D9-75BC-11D7-A6EF-00065B84435C}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{364215DA-75BC-11D7-A6EF-00065B84435C}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{49D2F9CE-1F5E-11D7-A6D3-00065B84435C}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{49D2F9CF-1F5E-11D7-A6D3-00065B84435C}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{534C48C1-0607-4098-A521-4FC899C73E90}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{565FB8D8-6BD4-4CA1-B223-0F2CCB8F4F96}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{7C6A82AE-B0D7-4F14-A745-14F28B009D61}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{85F9794B-4D19-40D8-8864-4E747371A66D}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{9B7BE3A9-E8AB-4D47-A8FE-254FA423436D}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{B95F181B-EA4C-4AF1-8056-7C321ABBB091}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        },
+        "{CCF05DD7-4A87-11D7-A6E2-00065B84435C}": {
+         "values": {},
+         "keys": {
+          "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        }
+       }
+      },
+      "Item": {
+       "values": {},
+       "keys": {
+        "{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}": {
+         "values": {},
+         "keys": {
+          "{046B8C80-1647-40F7-9B21-B93B81AABC1B}": {
+           "values": {},
+           "keys": {}
+          },
+          "{13A016DF-560B-46CD-947A-4C3AF1E0E35D}": {
+           "values": {},
+           "keys": {}
+          },
+          "{24AF3031-852D-40A2-BC09-8992898CE722}": {
+           "values": {},
+           "keys": {}
+          },
+          "{25504FB4-7BAB-4BC1-9C69-CF81890F0EF5}": {
+           "values": {},
+           "keys": {}
+          },
+          "{34745C63-B2F0-4784-8B67-5E12C8701A31}": {
+           "values": {},
+           "keys": {}
+          },
+          "{364215D9-75BC-11D7-A6EF-00065B84435C}": {
+           "values": {},
+           "keys": {}
+          },
+          "{364215DA-75BC-11D7-A6EF-00065B84435C}": {
+           "values": {},
+           "keys": {}
+          },
+          "{49D2F9CE-1F5E-11D7-A6D3-00065B84435C}": {
+           "values": {},
+           "keys": {}
+          },
+          "{49D2F9CF-1F5E-11D7-A6D3-00065B84435C}": {
+           "values": {},
+           "keys": {}
+          },
+          "{534C48C1-0607-4098-A521-4FC899C73E90}": {
+           "values": {},
+           "keys": {}
+          },
+          "{565FB8D8-6BD4-4CA1-B223-0F2CCB8F4F96}": {
+           "values": {},
+           "keys": {}
+          },
+          "{7C6A82AE-B0D7-4F14-A745-14F28B009D61}": {
+           "values": {},
+           "keys": {}
+          },
+          "{85F9794B-4D19-40D8-8864-4E747371A66D}": {
+           "values": {},
+           "keys": {}
+          },
+          "{9B7BE3A9-E8AB-4D47-A8FE-254FA423436D}": {
+           "values": {},
+           "keys": {}
+          },
+          "{B95F181B-EA4C-4AF1-8056-7C321ABBB091}": {
+           "values": {},
+           "keys": {}
+          },
+          "{CCF05DD7-4A87-11D7-A6E2-00065B84435C}": {
+           "values": {},
+           "keys": {}
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    "LanguageProfile": {
+     "values": {},
+     "keys": {
+      "0x00000404": {
+       "values": {},
+       "keys": {
+        "{3D02CAB6-2B8E-4781-BA20-1C9267529467}": {
+         "values": {
+          "Description": [
+           1,
+           "幻熊输入法"
+          ],
+          "IconFile": [
+           1,
+           "C:\\Windows\\system32\\weasel.dll"
+          ],
+          "IconIndex": [
+           4,
+           0
+          ],
+          "Enable": [
+           4,
+           0
+          ],
+          "HiddenInSettingUI": [
+           4,
+           0
+          ],
+          "SubItemInSettingUI": [
+           4,
+           0
+          ]
+         },
+         "keys": {}
+        }
+       }
+      },
+      "0x00000804": {
+       "values": {},
+       "keys": {
+        "{3D02CAB6-2B8E-4781-BA20-1C9267529467}": {
+         "values": {
+          "Description": [
+           1,
+           "幻熊输入法"
+          ],
+          "IconFile": [
+           1,
+           "C:\\Windows\\system32\\weasel.dll"
+          ],
+          "IconIndex": [
+           4,
+           0
+          ],
+          "Enable": [
+           4,
+           1
+          ],
+          "HiddenInSettingUI": [
+           4,
+           0
+          ],
+          "SubItemInSettingUI": [
+           4,
+           0
+          ]
+         },
+         "keys": {}
+        }
+       }
+      },
+      "0x00000c04": {
+       "values": {},
+       "keys": {
+        "{3D02CAB6-2B8E-4781-BA20-1C9267529467}": {
+         "values": {
+          "Description": [
+           1,
+           "幻熊输入法"
+          ],
+          "IconFile": [
+           1,
+           "C:\\Windows\\system32\\weasel.dll"
+          ],
+          "IconIndex": [
+           4,
+           0
+          ],
+          "Enable": [
+           4,
+           0
+          ],
+          "HiddenInSettingUI": [
+           4,
+           0
+          ],
+          "SubItemInSettingUI": [
+           4,
+           0
+          ]
+         },
+         "keys": {}
+        }
+       }
+      },
+      "0x00001004": {
+       "values": {},
+       "keys": {
+        "{3D02CAB6-2B8E-4781-BA20-1C9267529467}": {
+         "values": {
+          "Description": [
+           1,
+           "幻熊输入法"
+          ],
+          "IconFile": [
+           1,
+           "C:\\Windows\\system32\\weasel.dll"
+          ],
+          "IconIndex": [
+           4,
+           0
+          ],
+          "Enable": [
+           4,
+           0
+          ],
+          "HiddenInSettingUI": [
+           4,
+           0
+          ],
+          "SubItemInSettingUI": [
+           4,
+           0
+          ]
+         },
+         "keys": {}
+        }
+       }
+      },
+      "0x00001404": {
+       "values": {},
+       "keys": {
+        "{3D02CAB6-2B8E-4781-BA20-1C9267529467}": {
+         "values": {
+          "Description": [
+           1,
+           "幻熊输入法"
+          ],
+          "IconFile": [
+           1,
+           "C:\\Windows\\system32\\weasel.dll"
+          ],
+          "IconIndex": [
+           4,
+           0
+          ],
+          "Enable": [
+           4,
+           0
+          ],
+          "HiddenInSettingUI": [
+           4,
+           0
+          ],
+          "SubItemInSettingUI": [
+           4,
+           0
+          ]
+         },
+         "keys": {}
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ {
+  "hive": "HKCU",
+  "path": "Software\\Rime\\Weasel",
+  "tree": {
+   "values": {},
+   "keys": {
+    "Updates": {
+     "values": {
+      "CheckForUpdates": [
+       1,
+       "0"
+      ]
+     },
+     "keys": {}
+    }
+   }
+  }
+ },
+ {
+  "hive": "HKCU",
+  "path": "Control Panel\\International\\User Profile",
+  "tree": {
+   "values": {
+    "Languages": [
+     7,
+     [
+      "zh-Hans-CN"
+     ]
+    ],
+    "ShowAutoCorrection": [
+     4,
+     0
+    ],
+    "ShowTextPrediction": [
+     4,
+     0
+    ],
+    "ShowCasing": [
+     4,
+     0
+    ],
+    "ShowShiftLock": [
+     4,
+     0
+    ]
+   },
+   "keys": {
+    "zh-Hans-CN": {
+     "values": {
+      "CachedLanguageName": [
+       1,
+       "@Winlangdb.dll,-1650"
+      ],
+      "0804:{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}{3D02CAB6-2B8E-4781-BA20-1C9267529467}": [
+       4,
+       1
+      ],
+      "0804:{86598FB9-66A2-463E-B9C2-AEB906D477AD}{607FDF85-FCC8-4DBD-A365-41296F980C9C}": [
+       4,
+       2
+      ]
+     },
+     "keys": {}
+    }
+   }
+  }
+ },
+ {
+  "hive": "HKCU",
+  "path": "Control Panel\\International\\User Profile System Backup",
+  "tree": {
+   "values": {
+    "Languages": [
+     7,
+     [
+      "zh-Hans-CN"
+     ]
+    ],
+    "ShowAutoCorrection": [
+     4,
+     0
+    ],
+    "ShowTextPrediction": [
+     4,
+     0
+    ],
+    "ShowCasing": [
+     4,
+     0
+    ],
+    "ShowShiftLock": [
+     4,
+     0
+    ]
+   },
+   "keys": {
+    "zh-Hans-CN": {
+     "values": {
+      "0804:{81D4E9C9-1D3B-41BC-9E6C-4B40BF79E35E}{FA550B04-5AD7-411F-A5AC-CA038EC515D7}": [
+       4,
+       1
+      ]
+     },
+     "keys": {}
+    }
+   }
+  }
+ }
+]

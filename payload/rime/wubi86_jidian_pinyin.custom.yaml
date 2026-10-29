@@ -1,0 +1,43 @@
+patch:
+# 本文件由「幻熊输入法设置」（C:\Users\hu\RimeTools）生成。
+# 手工修改会在下次点「应用并部署」时被覆盖；要长期保留请改设置面板。
+  engine/translators:
+    - punct_translator
+    - script_translator@pinyin   # 拼音
+    - table_translator           # 五笔（主用）
+    - table_translator@custom_phrase
+  speller:
+    delimiter: "'"              # 不含空格，否则拼音音节间会自动插空格
+  pinyin:
+    initial_quality: 0             # 拼音候选整体压后
+    dictionary: pinyin_simp
+    enable_user_dict: true
+    user_dict: wubi86_jidian_pinyin_pinyin
+    db_class: userdb
+    preedit_format:
+      - "xform/([nl])v/$1ü/"
+      - "xform/([nl])ue/$1üe/"
+      - "xform/([jqxy])v/$1u/"
+      - "xform/'//"             # 音节分隔符不显示，保持连写（虚幻里不能有空格）
+  custom_phrase:
+    dictionary: ""
+    user_dict: custom_phrase
+    db_class: stabledb
+    enable_completion: false
+    enable_sentence: false
+    initial_quality: -100
+  engine/processors:
+    - lua_processor@commit_en_on_ctrl_num   # Ctrl+数字 上屏英文
+    - lua_processor@commit_raw_on_return    # 回车直接上码
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  engine/filters:
+    - lua_filter@en_comment_filter          # 候选后加英文注释
+  # 五笔候选整体排在拼音前面。必须用子键路径，写成 translator: 会把 dictionary 覆盖掉
+  translator/initial_quality: 2

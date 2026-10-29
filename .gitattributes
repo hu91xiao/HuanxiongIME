@@ -1,0 +1,16 @@
+* text=auto
+
+# 配置与脚本统一 LF，避免 Windows 上被改成 CRLF 后 diff 满屏
+*.py      text eol=lf
+*.yaml    text eol=lf
+*.lua     text eol=lf
+*.md      text eol=lf
+*.iss     text eol=crlf
+*.ps1     text eol=crlf
+*.txt     text eol=lf
+
+# 二进制
+*.ico     binary
+*.png     binary
+*.exe     binary
+*.dll     binary

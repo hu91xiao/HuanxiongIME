@@ -1,0 +1,105 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.17.4
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Tue Oct 27 23:31:57 2026"
+  rime_version: 1.13.1
+patch:
+  preset_color_schemes:
+    # 晴蓝 —— 冷白纸面 + 靛蓝选中块
+    QingLan:
+      name: "晴蓝"
+      author: DorpBear
+      back_color: 0xFAFBFC
+      border_color: 0xE2E6EC
+      shadow_color: 0x2E0E1620
+      text_color: 0x5A6472
+      hilited_text_color: 0x2A3646
+      candidate_text_color: 0x1C2330
+      comment_text_color: 0x8E97A6
+      hilited_candidate_text_color: 0x12305C
+      hilited_comment_text_color: 0x6E7C93
+      hilited_candidate_back_color: 0xE8EFF9
+      candidate_back_color: 0x00FFFFFF
+      label_color: 0xA9B0BC
+    # 夜墨 —— 石墨底 + 暖橙高亮
+    YeMo:
+      name: "夜墨"
+      author: DorpBear
+      back_color: 0x212327
+      border_color: 0x33363C
+      shadow_color: 0x88000000
+      text_color: 0x8A9099
+      hilited_text_color: 0xD7DBE0
+      candidate_text_color: 0xE6E8EB
+      comment_text_color: 0x7C838C
+      hilited_candidate_text_color: 0xFFD2A6
+      hilited_comment_text_color: 0xCBB49A
+      hilited_candidate_back_color: 0x3B3E45
+      candidate_back_color: 0x00212327
+      label_color: 0x666D77
+    # 云青 —— 宣纸米底 + 墨绿
+    YunQing:
+      name: "云青"
+      author: DorpBear
+      back_color: 0xFCFAF5
+      border_color: 0xE7E1D6
+      shadow_color: 0x2E301F10
+      text_color: 0x7A6A56
+      hilited_text_color: 0x40342A
+      candidate_text_color: 0x322A22
+      comment_text_color: 0x9E8A72
+      hilited_candidate_text_color: 0x2C3A12
+      hilited_comment_text_color: 0x7C7A4E
+      hilited_candidate_back_color: 0xEDF2DC
+      candidate_back_color: 0x00FCFAF5
+      label_color: 0xB6A692
+    # 素白 —— 极简中性，炭黑胶囊
+    SuBai:
+      name: "素白"
+      author: DorpBear
+      back_color: 0xFFFFFF
+      border_color: 0xEAEAEC
+      shadow_color: 0x28000000
+      text_color: 0x8C8C94
+      hilited_text_color: 0x1A1A1C
+      candidate_text_color: 0x26262A
+      comment_text_color: 0xA8A8AE
+      hilited_candidate_text_color: 0xFFFFFF
+      hilited_comment_text_color: 0xC2C2C8
+      hilited_candidate_back_color: 0x2A2A2E
+      candidate_back_color: 0x00FFFFFF
+      label_color: 0xB4B4BA
+  style:
+    color_scheme: YunQing
+    font_face: "Noto Sans SC Medium"
+    label_font_face: "Noto Sans SC Medium"
+    comment_font_face: "Segoe UI"
+    font_point: 15
+    label_font_point: 12
+    comment_font_point: 12
+    antialias_mode: grayscale
+    horizontal: true
+    inline_preedit: true
+    preedit_type: composition
+    display_tray_icon: false
+    hover_type: none
+    label_format: ""
+    layout:
+      align_type: center
+      min_width: 180
+      max_width: 560
+      min_height: 44
+      border_width: 1
+      margin_x: 14
+      margin_y: 10
+      spacing: 10
+      candidate_spacing: 16
+      hilite_spacing: 5
+      hilite_padding: 7
+      round_corner: 12
+      corner_radius: 10
+      shadow_radius: 10
+      shadow_offset_x: 0
+      shadow_offset_y: 3
+  "style/color_scheme": YunQing

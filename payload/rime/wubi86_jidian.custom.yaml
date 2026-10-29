@@ -1,0 +1,13 @@
+patch:
+  # 回车直接上屏输入的五笔编码（字母串），汉字用空格/数字键选
+  # 注意：必须写完整列表，用 @before:0 会被展开成嵌套列表导致加载失败
+  engine/processors:
+    - lua_processor@commit_raw_on_return
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
