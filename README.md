@@ -6,7 +6,38 @@
 词库内置 500+ 条 UE / 游戏开发术语。
 
 **只想用，不想看代码** → 到 [Releases](https://github.com/hu91xiao/HuanxiongIME/releases) 下载
-`HuanxiongIME-1.0-Setup.exe`（下载页显示为「幻熊输入法 1.0 安装程序」），双击，一路下一步。
+最新的 `HuanxiongIME-x.x-Setup.exe`（下载页显示为「幻熊输入法 x.x 安装程序」），双击，一路下一步。
+
+---
+
+## 装起来
+
+三种办法，任选一种。
+
+**1. 让 AI 帮你装**（对方电脑上跑着能执行命令的 AI：Claude Code、Cursor、Codex CLI、WorkBuddy…）
+
+整段复制给 AI：
+
+> 帮我在这个 Windows 电脑上安装「幻熊输入法」（虚幻引擎开发者向的五笔 + 拼音输入法）。
+> 用管理员 PowerShell 执行这一行，它会自己请求 UAC 提权：
+> `irm https://github.com/hu91xiao/HuanxiongIME/releases/latest/download/install.ps1 | iex`
+> 安装要 1~3 分钟（含编译词库），不要中途打断。
+> 装完请逐项核对并告诉我结果：
+> ① 进程 `WeaselServer.exe` 在运行 ② `HKLM\SOFTWARE\Microsoft\CTF\TIP\{A3F4CDED-B1E9-41EE-9CA6-7B4D0DE6CB0A}`
+> 下的 `Description` 是「幻熊输入法」 ③ `%APPDATA%\Rime\default.custom.yaml` 存在。
+> 如果杀软拦截或 SmartScreen 弹窗，告诉我具体是哪一个，不要自动关闭杀软。
+
+**2. 自己跑一行**（Win+X → 终端，普通权限即可）
+
+```
+irm https://github.com/hu91xiao/HuanxiongIME/releases/latest/download/install.ps1 | iex
+```
+
+**3. 手动**：去 Releases 下载 `HuanxiongIME-x.x-Setup.exe`，双击，一路下一步。
+
+装完按 `Win+空格` 切到「幻熊输入法」。
+
+> 国内访问 GitHub 不稳时，先设代理再跑脚本：`$env:HUANXIONG_PROXY='http://127.0.0.1:7897'`。
 
 ---
 
@@ -37,6 +68,7 @@ Rime 配置全在 `payload/rime/` 下，都是标准的 `.custom.yaml` 补丁 + 
 
 ```
 HuanxiongIME/
+├── install.ps1                一键安装脚本（随 Release 分发，AI / 命令行调用）
 ├── build.py                   一键构建（payload / settings / installer）
 ├── HuanxiongSettings.spec     PyInstaller 打包描述（设置面板）
 ├── src/settings/              设置面板源码
@@ -103,7 +135,7 @@ python build.py all
 | `full_remove.py` | 彻底清除：卸载 + 删目录 + 系统 dll + 注册表 + 快捷方式，用于模拟「新电脑」（需管理员，`--dry-run` 演练） |
 | `restore.py` | 一键还原：重装 + 覆盖备份配置 + 部署 + 起服务（需管理员，`--config-only` 只恢复词频短语） |
 | `caretfix.py` | 候选框跟随鼠标的进程外兜底（见「已知问题」） |
-| `publish_release.py` | 把 `dist/` 里的安装包发到 GitHub Releases（附件名必须 ASCII，中文放 label） |
+| `publish_release.py` | 把 `dist/` 里的安装包和 `install.ps1` 发到 GitHub Releases（附件名必须 ASCII，中文放 label） |
 | `legacy/` | 上游二进制的品牌化 / 托盘菜单裁剪等一次性改造脚本，只有换上游版本时才需要重跑 |
 
 ## 安装包做了什么
