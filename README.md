@@ -5,7 +5,8 @@
 五笔优先、拼音兜底；英文回车直上屏；候选词后面带英文注释，`Ctrl+数字` 直接上屏按命名风格转换过的英文；
 词库内置 500+ 条 UE / 游戏开发术语。
 
-**只想用，不想看代码** → 到 [Releases](../../releases) 下载 `幻熊输入法-1.0-安装程序.exe`，双击，一路下一步。
+**只想用，不想看代码** → 到 [Releases](https://github.com/hu91xiao/HuanxiongIME/releases) 下载
+`HuanxiongIME-1.0-Setup.exe`（下载页显示为「幻熊输入法 1.0 安装程序」），双击，一路下一步。
 
 ---
 
@@ -102,6 +103,7 @@ python build.py all
 | `full_remove.py` | 彻底清除：卸载 + 删目录 + 系统 dll + 注册表 + 快捷方式，用于模拟「新电脑」（需管理员，`--dry-run` 演练） |
 | `restore.py` | 一键还原：重装 + 覆盖备份配置 + 部署 + 起服务（需管理员，`--config-only` 只恢复词频短语） |
 | `caretfix.py` | 候选框跟随鼠标的进程外兜底（见「已知问题」） |
+| `publish_release.py` | 把 `dist/` 里的安装包发到 GitHub Releases（附件名必须 ASCII，中文放 label） |
 | `legacy/` | 上游二进制的品牌化 / 托盘菜单裁剪等一次性改造脚本，只有换上游版本时才需要重跑 |
 
 ## 安装包做了什么
