@@ -92,7 +92,8 @@ try {
   Warn "GitHub API 不可用：$($_.Exception.Message)"
 }
 if (-not $url) {
-  $name = 'HuanxiongIME-1.0-Setup.exe'
+  # API 被墙时的兜底：版本号变了要跟着改（tools/publish_release.py 会提示）
+  $name = 'HuanxiongIME-1.1-Setup.exe'
   $url  = "https://github.com/$Repo/releases/latest/download/$name"
   Warn '改用直连最新安装包。'
 }

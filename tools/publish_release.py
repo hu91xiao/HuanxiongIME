@@ -72,11 +72,16 @@ def find_exe(ver):
     return any_exe[0] if any_exe else None
 
 
-def upload(rel, path, name, label):
+def upload(rel, path, name, label, replace=False):
     for a in rel.get("assets", []):
         if a["name"] == name:
-            print("   已存在 %s，跳过" % name)
-            return a
+            if not replace:
+                print("   已存在 %s，跳过" % name)
+                return a
+            print("   替换已有的 %s" % name)
+            call("https://api.github.com/repos/%s/releases/assets/%d" % (REPO, a["id"]), method="DELETE")
+            rel["assets"].remove(a)
+            break
     url = rel["upload_url"].split("{")[0]
     url += "?name=" + urllib.parse.quote(name) + "&label=" + urllib.parse.quote(label)
     print("→ 上传 %s（%.1f MB）" % (name, os.path.getsize(path) / 1048576.0))
@@ -129,7 +134,7 @@ def main():
         rel = call("https://api.github.com/repos/%s/releases/tags/v%s" % (REPO, ver))
 
     upload(rel, exe, "HuanxiongIME-%s-Setup.exe" % ver, "幻熊输入法 %s 安装程序" % ver)
-    upload(rel, SCRIPT, "install.ps1", "一键安装脚本")
+    upload(rel, SCRIPT, "install.ps1", "一键安装脚本", replace=True)
 
     print("\n完成。")
     print("  一键装： irm https://github.com/%s/releases/latest/download/install.ps1 | iex" % REPO)
