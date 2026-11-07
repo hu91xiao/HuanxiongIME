@@ -2,7 +2,7 @@
 ; 编译：build.py installer   （或 ISCC.exe installer\setup.iss）
 
 #define AppName "幻熊输入法"
-#define AppVer "1.0"
+#define AppVer "1.1"
 #define AppPub "DorpBear"
 #define Exe "WeaselDeployer.exe"
 
@@ -32,7 +32,7 @@ ShowLanguageDialog=no
 CloseApplications=no
 RestartApplications=no
 AllowNoIcons=yes
-VersionInfoVersion=1.0.0.0
+VersionInfoVersion=1.1.0.0
 VersionInfoDescription={#AppName} 安装程序
 VersionInfoCompany={#AppPub}
 VersionInfoProductName={#AppName}
@@ -108,7 +108,9 @@ Name: "desktopicon"; Description: "在桌面创建「幻熊输入法设置」快
 Source: "..\payload\program\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "..\payload\settings\HuanxiongSettings.exe"; DestDir: "{app}"; DestName: "{#Exe}"; Flags: ignoreversion
 Source: "..\payload\settings\HuanxiongSettings_data\*"; DestDir: "{app}\HuanxiongSettings_data"; Flags: ignoreversion recursesubdirs createallsubdirs
-Source: "..\payload\rime\*"; DestDir: "{userappdata}\Rime"; Flags: onlyifdoesntexist uninsneveruninstall
+Source: "..\payload\rime\*"; DestDir: "{userappdata}\Rime"; Flags: ignoreversion uninsneveruninstall; Excludes: "wubi86_jidian_user.dict.yaml,custom_phrase.txt"
+Source: "..\payload\rime\wubi86_jidian_user.dict.yaml"; DestDir: "{userappdata}\Rime"; Flags: onlyifdoesntexist uninsneveruninstall
+Source: "..\payload\rime\custom_phrase.txt"; DestDir: "{userappdata}\Rime"; Flags: onlyifdoesntexist uninsneveruninstall
 Source: "..\docs\使用说明.txt"; DestDir: "{app}"; Flags: ignoreversion
 
 [Fonts]
@@ -166,7 +168,22 @@ begin
 end;
 
 procedure CurStepChanged(CurStep: TSetupStep);
+var
+  BkDir, UserDir: String;
 begin
+  { 升级会刷新 weasel.custom.yaml / default.custom.yaml，
+    装之前把用户改过的那两份留个底，想找回配色和快捷键就去这个目录 }
+  if CurStep = ssInstall then
+  begin
+    UserDir := ExpandConstant('{userappdata}\Rime');
+    if FileExists(UserDir + '\weasel.custom.yaml') then
+    begin
+      BkDir := UserDir + '\backup-before-{#AppVer}';
+      ForceDirectories(BkDir);
+      FileCopy(UserDir + '\weasel.custom.yaml', BkDir + '\weasel.custom.yaml', False);
+      FileCopy(UserDir + '\default.custom.yaml', BkDir + '\default.custom.yaml', False);
+    end;
+  end;
   if CurStep = ssPostInstall then
     InstallDone := True;
 end;

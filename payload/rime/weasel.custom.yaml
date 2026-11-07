@@ -70,6 +70,70 @@ patch:
       hilited_candidate_back_color: 0x2A2A2E
       candidate_back_color: 0x00FFFFFF
       label_color: 0xB4B4BA
+    # 曜石 —— 近黑底 + 香槟金，夜里最沉
+    YaoShi:
+      name: "曜石"
+      author: DorpBear
+      back_color: 0x0F1114
+      border_color: 0x262A31
+      shadow_color: 0xA6000000
+      text_color: 0x7C848F
+      hilited_text_color: 0xE9C88A
+      candidate_text_color: 0xDADEE4
+      comment_text_color: 0x6A727D
+      hilited_candidate_text_color: 0xFFF3DD
+      hilited_comment_text_color: 0xC7A87C
+      hilited_candidate_back_color: 0x2E2418
+      candidate_back_color: 0x000F1114
+      label_color: 0x59606A
+    # 午夜 —— 深海军蓝 + 冰蓝，冷而干净
+    WuYe:
+      name: "午夜"
+      author: DorpBear
+      back_color: 0x0C1322
+      border_color: 0x1D2B44
+      shadow_color: 0xA6000000
+      text_color: 0x6E809B
+      hilited_text_color: 0xA8D4FF
+      candidate_text_color: 0xD2DEEE
+      comment_text_color: 0x5F7188
+      hilited_candidate_text_color: 0xEDF6FF
+      hilited_comment_text_color: 0x9DB8D8
+      hilited_candidate_back_color: 0x1C3457
+      candidate_back_color: 0x000C1322
+      label_color: 0x51637A
+    # 朱砂 —— 墨底朱红，中国色里最贵的一笔
+    ZhuSha:
+      name: "朱砂"
+      author: DorpBear
+      back_color: 0x141115
+      border_color: 0x2B2329
+      shadow_color: 0xA6000000
+      text_color: 0x827A81
+      hilited_text_color: 0xFF9E82
+      candidate_text_color: 0xE6DFE4
+      comment_text_color: 0x6D646B
+      hilited_candidate_text_color: 0xFFF4EF
+      hilited_comment_text_color: 0xDBA294
+      hilited_candidate_back_color: 0x5A211B
+      candidate_back_color: 0x00141115
+      label_color: 0x5C545B
+    # 景德 —— 白瓷底 + 青花蓝块，描金边
+    JingDe:
+      name: "景德"
+      author: DorpBear
+      back_color: 0xFBFBF8
+      border_color: 0xE3E5E2
+      shadow_color: 0x33202A38
+      text_color: 0x6F7B88
+      hilited_text_color: 0x1B3A6B
+      candidate_text_color: 0x1A2430
+      comment_text_color: 0x8C99A6
+      hilited_candidate_text_color: 0xFFFFFF
+      hilited_comment_text_color: 0xD3E0F0
+      hilited_candidate_back_color: 0x2A4A7B
+      candidate_back_color: 0x00FBFBF8
+      label_color: 0xA7B1BC
   style:
     color_scheme: YunQing
     font_face: "Noto Sans SC Medium"

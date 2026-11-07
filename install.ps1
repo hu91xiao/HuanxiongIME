@@ -99,22 +99,49 @@ if (-not $url) {
 Ok "目标版本：$name"
 
 # ---------- 下载 ----------
+# 三级兜底：curl.exe（Win10 1803+ 自带，最快）→ Invoke-WebRequest → WebClient
 $tmp = Join-Path $env:TEMP $name
-Say '下载安装包（约 24 MB）…'
+Say '下载安装包（约 24 MB，视网络 1~3 分钟）…'
 $sw = [Diagnostics.Stopwatch]::StartNew()
-try {
-  $wc = New-Object Net.WebClient
-  $wc.Headers.Add('User-Agent', 'HuanxiongIME-Installer')
-  $wc.DownloadFile($url, $tmp)
-} catch {
-  Bad "下载失败：$($_.Exception.Message)"
+$got = $false
+
+$curl = Get-Command curl.exe -ErrorAction SilentlyContinue
+if ($curl) {
+  try {
+    & $curl.Source -sS -L --fail --retry 2 --retry-delay 2 --connect-timeout 20 -o $tmp $url
+    if ($LASTEXITCODE -eq 0 -and (Test-Path -LiteralPath $tmp) -and
+        ((Get-Item -LiteralPath $tmp).Length -gt 1MB)) { $got = $true }
+  } catch { }
+}
+
+if (-not $got) {
+  $oldPP = $ProgressPreference
+  $ProgressPreference = 'SilentlyContinue'
+  try {
+    Invoke-WebRequest -Uri $url -OutFile $tmp -UseBasicParsing -TimeoutSec 900
+    if ((Get-Item -LiteralPath $tmp).Length -gt 1MB) { $got = $true }
+  } catch { }
+  $ProgressPreference = $oldPP
+}
+
+if (-not $got) {
+  try {
+    $wc = New-Object Net.WebClient
+    $wc.Headers.Add('User-Agent', 'HuanxiongIME-Installer')
+    $wc.DownloadFile($url, $tmp)
+    if ((Get-Item -LiteralPath $tmp).Length -gt 1MB) { $got = $true }
+  } catch { }
+}
+
+if (-not $got) {
+  Bad '下载失败，可能是网络不通或被杀软拦截。'
   Write-Host ''
   Say '如果这台电脑访问 GitHub 需要代理，先执行下面这行再重试：' 'White'
   Say "  `$env:HUANXIONG_PROXY = 'http://127.0.0.1:7897'" 'White'
   exit 1
 }
 $sw.Stop()
-Ok ("下载完成，{0:N1} 秒 / {1:N1} MB" -f $sw.Elapsed.TotalSeconds, ((Get-Item $tmp).Length / 1MB))
+Ok ("下载完成，{0:N1} 秒 / {1:N1} MB" -f $sw.Elapsed.TotalSeconds, ((Get-Item -LiteralPath $tmp).Length / 1MB))
 try { Unblock-File -LiteralPath $tmp } catch {}
 
 # ---------- 安装 ----------

@@ -126,6 +126,15 @@
   .seg[data-key="scheme"] button[data-v="SuBai"]::before{background:linear-gradient(135deg,#fff 0 48%,#2A2A2E 48% 100%)}
   .seg[data-key="scheme"] button[data-v="YeMo"]::before{background:#2C2F37}
   .seg[data-key="scheme"] button[data-v="YunQing"]::before{background:#6E7B3C}
+  .seg[data-key="scheme"] button[data-v="YaoShi"]::before{background:linear-gradient(135deg,#14161A 0 52%,#C69A56 52% 100%)}
+  .seg[data-key="scheme"] button[data-v="WuYe"]::before{background:#1C3457}
+  .seg[data-key="scheme"] button[data-v="ZhuSha"]::before{background:linear-gradient(135deg,#161317 0 52%,#B93B2E 52% 100%)}
+  .seg[data-key="scheme"] button[data-v="JingDe"]::before{background:linear-gradient(135deg,#FBFBF8 0 52%,#2A4A7B 52% 100%)}
+  /* 8 套配色排成 2×4 */
+  .seg[data-key="scheme"]{
+    display:grid;grid-template-columns:repeat(4,1fr);width:372px;gap:2px;
+  }
+  .seg[data-key="scheme"] button{justify-content:center;padding:6px 8px}
 
   /* ---------- 开关 ---------- */
   .sw{position:relative;display:inline-block;width:44px;height:26px;flex:0 0 44px}
@@ -296,12 +305,16 @@
       <div class="card-h">配色</div>
       <div class="card">
         <div class="row">
-          <div class="l"><div class="t">主题</div><div class="d">晴蓝：冷白底；素白：极简黑白；夜墨：深色；云青：米底墨绿</div></div>
+          <div class="l"><div class="t">主题</div><div class="d">浅色：晴蓝 / 素白 / 云青 / 景德　深色：夜墨 / 曜石 / 午夜 / 朱砂</div></div>
           <div class="seg" data-key="scheme">
             <button data-v="QingLan">晴蓝</button>
             <button data-v="SuBai">素白</button>
-            <button data-v="YeMo">夜墨</button>
             <button data-v="YunQing">云青</button>
+            <button data-v="JingDe">景德</button>
+            <button data-v="YeMo">夜墨</button>
+            <button data-v="YaoShi">曜石</button>
+            <button data-v="WuYe">午夜</button>
+            <button data-v="ZhuSha">朱砂</button>
           </div>
         </div>
       </div>

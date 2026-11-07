@@ -112,7 +112,8 @@ end
 
 
 --- 处理器：回车直接上屏当前输入的编码串（拼音/五笔字母），不选中候选
---- 中文首词改用空格或数字键选择；ascii 模式下不拦截
+--- 只要输入框里还有字符就上屏原文，不管有没有候选（大写字母、打不出的码也要能上）
+--- ascii 模式下不拦截，避免影响正常换行
 function commit_raw_on_return(key, env)
     local ctx = env.engine.context
     -- 只处理按下、无修饰键的回车
@@ -122,7 +123,7 @@ function commit_raw_on_return(key, env)
     if key:repr() ~= "Return" then
         return 2
     end
-    if not ctx:has_menu() then
+    if ctx:get_option("ascii_mode") then
         return 2
     end
     local raw = ctx.input

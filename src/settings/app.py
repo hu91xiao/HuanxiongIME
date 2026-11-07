@@ -39,7 +39,7 @@ launch_log("module import")
 import settings as CORE                                 # noqa: E402
 
 APP_TITLE = "幻熊输入法设置"
-APP_VERSION = "1.0"
+APP_VERSION = "1.1"
 
 
 def resource(name):
